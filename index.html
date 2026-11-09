@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evelyn Yayra Kpozo Dzenyoh — Keep Your Brand Alive</title>
+<meta name="description" content="Evelyn Yayra Kpozo Dzenyoh — Integrated Marketing Communications Specialist in Accra, Ghana. Brand strategy, hospitality & retail marketing, event activations, and published research on user-generated content and brand perception.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c1a11;
+  --bg2:#10241716;
+  --ink:#eef4ee;
+  --muted:#9db3a4;
+  --card:rgba(255,255,255,.055);
+  --card2:rgba(255,255,255,.09);
+  --border:rgba(255,255,255,.12);
+  --lime:#7cf59c;
+  --lime-dim:rgba(124,245,156,.14);
+  --gold:#f5d06f;
+  --coral:#ff8a7a;
+  --radius:26px;
+  --font:'Poppins',system-ui,sans-serif;
+  --hand:'Caveat',cursive;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.7;overflow-x:hidden;font-weight:300}
+::selection{background:var(--lime);color:#06381d}
+.glow{position:fixed;inset:0;z-index:-3;pointer-events:none;background:
+  radial-gradient(46vw 40vw at 78% 6%, rgba(124,245,156,.13), transparent 62%),
+  radial-gradient(40vw 34vw at 6% 34%, rgba(124,245,156,.07), transparent 60%),
+  radial-gradient(50vw 44vw at 84% 92%, rgba(30,80,50,.35), transparent 65%),
+  radial-gradient(30vw 26vw at 12% 88%, rgba(245,208,111,.05), transparent 60%)}
+.grain{position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--lime),var(--gold));z-index:99;border-radius:0 3px 3px 0;box-shadow:0 0 12px rgba(124,245,156,.55)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+section{padding:104px 0}
+
+/* ===== nav ===== */
+nav{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-content:center;pointer-events:none}
+.np{display:flex;align-items:center;gap:6px;padding:9px 10px;border-radius:999px;background:rgba(9,20,13,.62);
+  backdrop-filter:blur(20px) saturate(1.25);-webkit-backdrop-filter:blur(20px) saturate(1.25);
+  border:1px solid var(--border);box-shadow:0 14px 44px rgba(0,0,0,.5);pointer-events:auto}
+.np a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:500;padding:8px 14px;border-radius:999px;transition:.25s}
+.np a:hover{color:var(--ink);background:rgba(255,255,255,.07)}
+.np .brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:800;font-size:1rem}
+.np .brand svg{color:var(--lime)}
+.np .brand em{font-style:normal;color:var(--lime)}
+.np .cta{background:var(--ink);color:#062e19!important;font-weight:700;box-shadow:0 8px 26px rgba(255,255,255,.18);margin-left:4px}
+.np .cta:hover{background:var(--lime)!important;transform:translateY(-1px)}
+@media(max-width:940px){.np .hide-m{display:none}}
+
+/* ===== hero ===== */
+.hero{padding:150px 0 40px;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center;min-height:96svh}
+.badge-tag{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.badge-tag b{color:var(--lime);font-weight:700}
+.hero h1{font-size:clamp(2.7rem,5.4vw,4.4rem);line-height:1.06;letter-spacing:-.02em;font-weight:800;margin:20px 0 10px}
+.hero h1 i{font-style:normal;color:var(--lime);position:relative}
+.hero h1 i svg{position:absolute;left:0;bottom:-10px;width:100%;height:12px}
+.hero p.sub{color:var(--muted);max-width:520px;font-size:1rem;margin:16px 0 32px}
+.btnrow{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;transition:.3s;border:1px solid transparent;will-change:transform}
+.btn.white{background:var(--ink);color:#062e19;box-shadow:0 10px 34px rgba(255,255,255,.16)}
+.btn.white:hover{background:var(--lime);transform:translateY(-3px);box-shadow:0 16px 40px rgba(124,245,156,.3)}
+.btn.line{border-color:var(--border);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn.line:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-3px)}
+.play{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--border);display:inline-flex;align-items:center;justify-content:center;color:var(--ink);text-decoration:none;transition:.3s;font-size:.85rem}
+.play:hover{border-color:var(--lime);color:var(--lime);transform:scale(1.1)}
+.demo-note{font-size:.78rem;color:var(--muted);margin-left:6px}
+
+/* vertical strips (Gardena) */
+.strips{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;height:520px;align-items:end}
+.strip{border-radius:130px;overflow:hidden;position:relative;border:1px solid var(--border);background:#132b1d;box-shadow:0 24px 60px rgba(0,0,0,.4);transition:.45s}
+.strip img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.strip:hover{transform:translateY(-10px)}
+.strip:hover img{transform:scale(1.06);transition:transform .6s}
+.strip img{transform:scale(1)}
+.strip1{height:82%}
+.strip2{height:100%}
+.strip3{height:72%}
+
+/* floating profile card (Gardena) */
+.pcard{position:absolute;right:-12px;top:6%;width:242px;border-radius:22px;background:rgba(15,32,21,.82);
+  border:1px solid var(--border);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  padding:20px;box-shadow:0 26px 70px rgba(0,0,0,.55);z-index:5;animation:bob 7s ease-in-out infinite}
+.pcard .ava{width:64px;height:64px;border-radius:50%;overflow:hidden;border:2px solid var(--lime);margin-bottom:12px}
+.pcard .ava img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.pcard .avail{display:inline-flex;align-items:center;gap:7px;background:var(--lime);color:#06381d;font-size:.66rem;font-weight:800;letter-spacing:.1em;padding:5px 12px;border-radius:99px;text-transform:uppercase}
+.pcard .avail::before{content:'';width:6px;height:6px;border-radius:50%;background:#06381d}
+.pcard h4{font-size:1rem;font-weight:700;margin:10px 0 2px}
+.pcard .role{color:var(--muted);font-size:.78rem}
+.pcard .stat-row{display:flex;gap:12px;margin:12px 0 14px;font-size:.74rem;color:var(--ink);font-weight:600}
+.pcard .stat-row b{color:var(--lime)}
+.pcard .socials{display:flex;gap:8px}
+.pcard .socials a{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:.25s}
+.pcard .socials a:hover{background:var(--lime);color:#06381d;border-color:transparent;transform:translateY(-3px)}
+.pcard .socials svg{width:14px;height:14px;fill:currentColor}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero-cards{position:relative}
+.chip-quote{position:absolute;left:-40px;bottom:-26px;width:250px;border-radius:18px;background:rgba(15,32,21,.85);
+  border:1px solid var(--border);backdrop-filter:blur(16px);padding:16px 18px;box-shadow:0 20px 50px rgba(0,0,0,.5);z-index:5;animation:bob2 9s ease-in-out infinite}
+.chip-quote .stars{color:var(--gold);font-size:.8rem;letter-spacing:2px}
+.chip-quote p{font-size:.8rem;color:#dcebe0;line-height:1.55;margin-top:6px}
+.chip-quote small{color:var(--muted);font-size:.68rem;display:block;margin-top:8px}
+@keyframes bob2{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ===== marquee ===== */
+.marq{display:flex;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(255,255,255,.025);padding:4px 0}
+.mrow{display:flex;width:max-content;animation:slide 30s linear infinite}
+.mrow.rv{animation-direction:reverse}
+.mi{display:flex;align-items:center;gap:16px;padding:16px 34px;white-space:nowrap;font-weight:500;font-size:1.05rem;color:var(--muted)}
+.mi b{color:var(--ink);font-weight:700}
+.mi .st{color:var(--lime);font-size:.9rem}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ===== section chrome (Gardena dash-underline) ===== */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:26px;margin-bottom:12px;flex-wrap:wrap}
+.sec-title{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:700;letter-spacing:-.01em;position:relative;display:inline-block}
+.sec-title::after{content:'';position:absolute;left:2px;bottom:-10px;width:64px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--lime),transparent)}
+.sec-title em{font-style:normal;color:var(--lime)}
+.sec-sub{color:var(--muted);max-width:460px;font-size:.94rem}
+.over{position:absolute;font-family:var(--hand);color:var(--gold);font-size:1.3rem;transform:rotate(-3deg)}
+
+/* ===== stats ===== */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.stat{padding:30px 26px;border-radius:22px;background:var(--card);border:1px solid var(--border);backdrop-filter:blur(12px);transition:.35s;position:relative}
+.stat:hover{transform:translateY(-8px);border-color:rgba(124,245,156,.5);background:var(--card2)}
+.stat .hl{position:absolute;width:22px;height:22px;top:-9px;left:-9px;border:2px solid var(--lime);opacity:.75;border-radius:50%}
+.stat .num{font-size:2.5rem;font-weight:800;letter-spacing:-.02em;background:linear-gradient(120deg,#fff,var(--lime));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{color:var(--muted);font-size:.87rem;margin-top:9px}
+
+/* ===== experience ===== */
+xp-card-grid{display:grid}
+.xp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:50px}
+.xp-card{border-radius:24px;background:var(--card);border:1px solid var(--border);padding:32px;transition:.4s;position:relative;overflow:hidden}
+.xp-card:hover{background:var(--card2);transform:translateY(-6px)}
+.xp-card::before{content:'';position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--lime),transparent)}
+.xp-card .yr{display:inline-flex;font-size:.7rem;font-weight:800;letter-spacing:.15em;color:#06381d;background:var(--lime);padding:6px 14px;border-radius:99px}
+.xp-card .yr.p{background:rgba(255,255,255,.12);color:var(--ink)}
+.xp-card h3{font-size:1.24rem;font-weight:700;margin:16px 0 3px}
+.xp-card .org{color:var(--gold);font-size:.88rem;font-weight:500;margin-bottom:12px}
+.xp-card ul{margin:0;padding-left:20px;color:#c8d8cc;font-size:.92rem;display:grid;gap:7px}
+.xp-card .win{margin-top:16px;padding:12px 15px;border-radius:14px;background:rgba(124,245,156,.07);border:1px dashed rgba(124,245,156,.3);font-size:.85rem;color:#dcebe0}
+.xp-card .win b{color:var(--lime)}
+
+/* ===== research ===== */
+.research{margin-top:50px;border-radius:30px;padding:50px;background:
+  linear-gradient(140deg,rgba(124,245,156,.10),rgba(245,208,111,.05) 55%,rgba(255,138,122,.05));
+  border:1px solid rgba(255,255,255,.15);position:relative;overflow:hidden}
+.research .c1{position:absolute;width:240px;height:240px;border-radius:50%;top:-70px;right:-60px;background:radial-gradient(circle,rgba(124,245,156,.18),transparent 70%)}
+.research h3{font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:700;max-width:660px}
+.research .meta{color:var(--muted);font-size:.85rem;margin:10px 0 30px}
+.rstats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:30px}
+.rstat{padding:26px;border-radius:20px;background:rgba(8,18,12,.55);border:1px solid var(--border);transition:.3s}
+.rstat:hover{transform:translateY(-5px);border-color:rgba(124,245,156,.5)}
+.rstat .num{font-size:2.05rem;font-weight:800;color:var(--lime)}
+.rstat p{color:var(--muted);font-size:.85rem;margin-top:7px}
+.mini-bars{display:grid;gap:11px;max-width:620px;margin-bottom:30px}
+.mb{display:grid;grid-template-columns:150px 1fr 70px;gap:14px;align-items:center;font-size:.85rem;color:#c8d8cc}
+.mb .track{height:9px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+.mb .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--lime),var(--gold));width:0;transition:width 1.5s cubic-bezier(.2,.7,.2,1)}
+.mb .pct{text-align:right;color:var(--lime);font-weight:700}
+
+/* ===== work (Planto product grid) ===== */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.wcard{border-radius:24px;background:var(--card);border:1px solid var(--border);backdrop-filter:blur(12px);overflow:hidden;transition:.4s;position:relative}
+.wcard:hover{transform:translateY(-10px);border-color:rgba(124,245,156,.5);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.wimg{height:180px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.wimg::before{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%, rgba(124,245,156,.28), transparent 55%),radial-gradient(circle at 75% 70%, rgba(245,208,111,.2), transparent 55%);transition:transform 1.2s}
+.wcard:hover .wimg::before{transform:scale(1.35) rotate(20deg)}
+.wimg svg{position:relative;z-index:1;transition:.4s}
+.wcard:hover .wimg svg{transform:scale(1.18) rotate(8deg)}
+.wimg::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(transparent,rgba(12,26,17,.9))}
+.wfoot{padding:20px 22px 24px;display:flex;align-items:center;gap:14px}
+.wfoot .txt{flex:1}
+.wfoot h4{font-size:1.04rem;font-weight:700;margin-bottom:5px}
+.wfoot p{color:var(--muted);font-size:.82rem;line-height:1.55}
+.wact{display:flex;flex-direction:column;gap:8px}
+.iact{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:.3s;font-size:.95rem}
+.iact:hover{background:var(--lime);color:#06381d;border-color:transparent;transform:scale(1.12)}
+.iact.g{border-color:rgba(124,245,156,.5);color:var(--lime)}
+
+/* ===== services ===== */
+.svc-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;margin-top:48px;align-items:start}
+.svc-visual{position:relative;min-height:420px;border-radius:26px;overflow:hidden;border:1px solid var(--border)}
+.svc-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%;opacity:.92}
+.svc-visual .ov{position:absolute;inset:0;background:linear-gradient(200deg,transparent 30%,rgba(12,26,17,.85))}
+.svc-visual .badge{position:absolute;left:22px;bottom:22px;background:rgba(9,20,13,.8);border:1px solid var(--border);backdrop-filter:blur(10px);border-radius:16px;padding:14px 18px;font-family:var(--hand);font-size:1.35rem;color:var(--lime)}
+.svc-list{display:grid;gap:14px}
+.svc{display:flex;gap:18px;padding:22px 24px;border-radius:20px;background:var(--card);border:1px solid var(--border);transition:.3s;align-items:flex-start}
+.svc:hover{background:var(--card2);transform:translateX(8px)}
+.svc .ic{width:46px;height:46px;flex-shrink:0;border-radius:14px;background:var(--lime-dim);border:1px solid rgba(124,245,156,.3);display:flex;align-items:center;justify-content:center;color:var(--lime)}
+.svc h4{font-size:1rem;font-weight:700;margin-bottom:5px}
+.svc p{color:var(--muted);font-size:.87rem}
+
+/* ===== thoughts ===== */
+.tgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:48px}
+.thought{position:relative;padding:32px;border-radius:24px;background:var(--card);border:1px solid var(--border);text-decoration:none;color:var(--ink);display:block;transition:.35s;overflow:hidden}
+.thought:hover{transform:translateY(-6px);border-color:rgba(124,245,156,.5)}
+.thought .q{font-size:3.4rem;line-height:.6;color:var(--lime);display:block;margin:18px 0 14px;font-family:Georgia,serif}
+.thought .hl{font-family:var(--hand);font-size:1.7rem;line-height:1.35;font-weight:600}
+.thought p{color:#c8d8cc;font-size:.9rem;margin-top:12px}
+.thought .src{margin-top:18px;display:flex;justify-content:space-between;align-items:center;color:var(--lime);font-size:.78rem;font-weight:600;letter-spacing:.08em}
+.arrow{transition:.3s}
+.thought:hover .arrow{transform:translateX(8px)}
+
+/* ===== contact ===== */
+.contact{padding:120px 0 0;text-align:center;position:relative}
+.contact .blob{position:absolute;z-index:-1;left:50%;top:30%;transform:translate(-50%,-40%);width:min(680px,80vw);height:320px;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(124,245,156,.22),rgba(245,208,111,.08),transparent);filter:blur(36px)}
+.contact h2{font-size:clamp(2.6rem,7.6vw,5.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.08}
+.contact h2 em{font-style:normal;color:var(--lime)}
+.contact .sub2{color:var(--muted);max-width:520px;margin:22px auto 0;font-size:.98rem}
+.cbtns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.socials{display:flex;gap:12px;justify-content:center;margin-top:32px}
+.sbtn{width:52px;height:52px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:.3s;background:rgba(255,255,255,.03)}
+.sbtn:hover{background:var(--lime);color:#06381d;transform:translateY(-5px) rotate(-8deg);border-color:transparent}
+footer{margin-top:90px;border-top:1px solid var(--border);padding:36px 0;text-align:center;color:var(--muted);font-size:.8rem}
+footer b{color:var(--lime)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px) scale(.985);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.26s}.d4{transition-delay:.36s}
+
+/* responsive */
+@media(max-width:1020px){
+  .hero{grid-template-columns:1fr;padding-top:128px}
+  .pcard{right:-6px;top:-20px}
+  .chip-quote{left:-6px;bottom:-22px}
+  .xp-grid{grid-template-columns:1fr}
+  .work-grid,.rstats{grid-template-columns:1fr 1fr}
+  .svc-wrap{grid-template-columns:1fr}
+  .tgrid{grid-template-columns:1fr}
+  .statistics{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  section{padding:66px 0}
+  .work-grid,.rstats,.stat-grid{grid-template-columns:1fr 1fr}
+  .strips{height:380px;gap:10px}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="glow"></div>
+<div class="grain"></div>
+
+<nav><div class="np">
+  <a href="#top" class="brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-4 4-9 4-12-3 0-8 1-10 5-1.7 3.4-.6 7 6 7z" fill="currentColor" opacity=".2"/><path d="M12 22c4-4 4-9 4-12-3 0-8 1-10 5-1.7 3.4-.6 7 6 7z"/><path d="M12 22V9"/></svg>Evelyn<em>.AYK</em></a>
+  <a href="#about" class="hide-m">Receipts</a>
+  <a href="#experience" class="hide-m">Story</a>
+  <a href="#research" class="hide-m">Research</a>
+  <a href="#work" class="hide-m">Work</a>
+  <a href="#services" class="hide-m">Services</a>
+  <a href="#contact" class="cta">Let's talk</a>
+</div></nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero wrap" id="top">
+  <div>
+    <div class="badge-tag reveal in"><b>✦</b> Portfolio 2025 · <b>Accra, Ghana</b></div>
+    <h1 class="reveal in">Keep your brand <i>alive
+      <svg viewBox="0 0 220 12" fill="none" preserveAspectRatio="none"><path d="M3 9c34-7 66-7 106-4 38 2 76 1 108-4" stroke="#7cf59c" stroke-width="4.6" stroke-linecap="round" opacity=".9"/></svg></i></h1>
+    <p class="sub reveal in d1">Integrated marketing communications specialist — ten years of campaigns that
+      connect, hospitality events that break records, and research that finally answers how consumers decide
+      to <em style="color:var(--ink)">believe</em>.</p>
+    <div class="btnrow reveal in d2">
+      <a href="#work" class="btn white magnetic">Explore my work
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#research" class="play magnetic" title="See the research">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></a>
+      <span class="demo-note">or read the research →</span>
+    </div>
+  </div>
+
+  <div class="hero-cards reveal in d2">
+    <div class="strips">
+      <div class="strip strip1"><img src="assets/evelyn.jpg" alt="Evelyn at her UniMAC MA graduation" style="object-position:18% 30%"></div>
+      <div class="strip strip2"><img src="assets/evelyn.jpg" alt="Evelyn smiling, close-up" style="object-position:50% 22%"></div>
+      <div class="strip strip3"><img src="assets/evelyn.jpg" alt="Evelyn holding her diploma tube" style="object-position:88% 40%"></div>
+    </div>
+    <div class="pcard">
+      <div class="ava"><img src="assets/evelyn-sq.jpg" alt="Evelyn Yayra Kpozo Dzenyoh"></div>
+      <div class="avail">Available</div>
+      <h4>Evelyn Yayra K. Dzenyoh</h4>
+      <div class="role">Marketing / PRO — La Palm Casino, Accra</div>
+      <div class="stat-row"><span><b>✦</b> 10,000+</span><span><b>✦</b> 8+ events/yr</span><span><b>✦</b> MA '25</span></div>
+      <div class="socials">
+        <!-- LinkedIn URL pending from Evelyn -->
+        <a href="#" title="LinkedIn — URL to be added"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg></a>
+        <a href="mailto:evelynyayra98@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2zM4 6l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a href="tel:+233500730878" title="Call"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a>
+      </div>
+    </div>
+    <div class="chip-quote">
+      <div class="stars">★★★★★</div>
+      <p>"Why advertise periods as though the goal is to convince women their period isn't happening?"</p>
+      <small>— From her marketing commentary on LinkedIn</small>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marq"><div class="mrow">
+  <div class="mi"><span class="st">🌿</span><b>Brand strategy</b></div><div class="mi"><span class="st">🌿</span>Event marketing</div><div class="mi"><span class="st">🌿</span><b>Social &amp; digital</b></div><div class="mi"><span class="st">🌿</span>Public relations</div><div class="mi"><span class="st">🌿</span><b>Consumer research</b></div><div class="mi"><span class="st">🌿</span>CRM &amp; retention</div>
+  <div class="mi"><span class="st">🌿</span><b>Brand strategy</b></div><div class="mi"><span class="st">🌿</span>Event marketing</div><div class="mi"><span class="st">🌿</span><b>Social &amp; digital</b></div><div class="mi"><span class="st">🌿</span>Public relations</div><div class="mi"><span class="st">🌿</span><b>Consumer research</b></div><div class="mi"><span class="st">🌿</span>CRM &amp; retention</div>
+</div></div>
+
+<!-- ================= 01 STATS ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="sec-title reveal">— The <em>receipts</em></h2>
+      </div>
+      <p class="sec-sub reveal d1">Every number below is from her work: campaigns executed, databases built, records set. <span class="over" style="top:-26px;right:-8px">she counts! ✦</span></p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal d1"><span class="hl"></span><div class="num" data-count="100" data-suffix="%">0%</div><div class="lbl">Growth in social-media engagement at La Palm Casino</div></div>
+      <div class="stat reveal d2"><span class="hl"></span><div class="num" data-count="10000" data-suffix="+" data-comma="1">0</div><div class="lbl">Customer database built for targeted CRM &amp; retention</div></div>
+      <div class="stat reveal d3"><span class="hl"></span><div class="num" data-count="8" data-suffix="+">0</div><div class="lbl">Major campaigns &amp; branded events executed annually</div></div>
+      <div class="stat reveal d4"><span class="hl"></span><div class="num" data-count="1" data-prefix="#">0</div><div class="lbl">Record-breaking attendance at La Palm's anniversaries in five years</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="sec-title reveal">— Ten years of <em>doing the work</em></h2></div>
+      <p class="sec-sub reveal d1">Hospitality, FMCG, academia and the research field — four different ways of being useful to a brand.</p>
+    </div>
+    <div class="xp-grid">
+      <div class="xp-card reveal d1">
+        <span class="yr">2023 — Now</span>
+        <h3>Public Relations Officer</h3>
+        <div class="org">La Palm Royal Beach Hotel · La Palm Casino — Accra</div>
+        <ul>
+          <li>Leads marketing &amp; brand communication for West Africa's premier gaming venue.</li>
+          <li>Directed themed events, activations &amp; anniversary celebrations behind record attendance.</li>
+          <li>Frontline crisis communication &amp; reputation management in a high-visibility venue.</li>
+        </ul>
+        <div class="win">✦ <b>100%</b> engagement lift · <b>10,000+</b> customer database · <b>8+</b> events a year</div>
+      </div>
+      <div class="xp-card reveal d2">
+        <span class="yr p">2024 — 2025</span>
+        <h3>Sales &amp; Marketing Manager</h3>
+        <div class="org">Pinnacle Coco (CocoLyf) — emerging FMCG beverage brand</div>
+        <ul>
+          <li>Took an emerging beverage to market: distribution at Afrikiko, Kyba, Frankie's Osu, UPSA, Chicken n' Wine &amp; the Legon cafeteria.</li>
+          <li>Led a 3-person marketing team — content calendars, influencer collabs, street activations.</li>
+        </ul>
+        <div class="win">✦ <b>6</b> distribution partners · recurring monthly revenue growth</div>
+      </div>
+      <div class="xp-card reveal d3">
+        <span class="yr p">2021 — 2022</span>
+        <h3>Teaching Assistant</h3>
+        <div class="org">Institute of Journalism (UniMAC-GIJ) — Accra</div>
+        <ul>
+          <li>Supported communication &amp; journalism instruction and research content development.</li>
+          <li>Coached students; coordinated course delivery.</li>
+        </ul>
+        <div class="win">✦ Communication fundamentals, taught &amp; re-learned daily</div>
+      </div>
+      <div class="xp-card reveal d4">
+        <span class="yr p">2016 — 2018</span>
+        <h3>Market Researcher (Freelance)</h3>
+        <div class="org">BENSUM · Marketing Support Consultancy · Nielsen — Accra</div>
+        <ul>
+          <li>In-depth interviews, focus groups, product testing &amp; field research for boutique agencies.</li>
+          <li>Projects for Perk Biscuit, Vodafone fixed broadband and GHone TV.</li>
+        </ul>
+        <div class="win">✦ Street-level insights for FMCG, telecom &amp; media brands</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 RESEARCH ================= -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="sec-title reveal">— Published <em>research</em></h2></div>
+      <p class="sec-sub reveal d1">Her MA dissertation answers a question most brands skip: how do consumers decide to believe?</p>
+    </div>
+    <div class="research reveal d1">
+      <div class="c1"></div>
+      <h3>"The Influence of User-Generated Content on Brand Perception in Ghana"</h3>
+      <div class="meta">MA dissertation · University of Media, Arts and Communication (UniMAC) · February 2025 ·
+        Supervisor: Dr. Benedine Azanu · Keller's Brand Equity model + Social Influence theory</div>
+      <div class="rstats">
+        <div class="rstat reveal"><div class="num" data-count="61.6" data-suffix="%">0</div><p>of Ghanaian consumers trust user-generated content as much as — or more than — brand advertising</p></div>
+        <div class="rstat reveal d1"><div class="num" data-count="79.2" data-suffix="%">0</div><p>have bought a product or service because of user-generated content</p></div>
+        <div class="rstat reveal d2"><div class="num" data-count="68.3" data-suffix="%">0</div><p>suspect brands quietly pay some creators — authenticity is the credibility battleground</p></div>
+      </div>
+      <div class="mini-bars">
+        <div class="mb"><span>Product reviews</span><div class="track"><div class="fill" data-w="48.3"></div></div><span class="pct">48.3%</span></div>
+        <div class="mb"><span>Testimonials</span><div class="track"><div class="fill" data-w="20.8"></div></div><span class="pct">20.8%</span></div>
+        <div class="mb"><span>Photos</span><div class="track"><div class="fill" data-w="15.8"></div></div><span class="pct">15.8%</span></div>
+        <div class="mb"><span>Videos</span><div class="track"><div class="fill" data-w="15.0"></div></div><span class="pct">15.0%</span></div>
+      </div>
+      <a class="btn line reveal" href="https://repository.unimac.edu.gh/items/bc05b123-5935-411b-9873-07fc11997b65" target="_blank" rel="noopener" style="color:var(--lime);border-color:rgba(124,245,156,.45)">
+        Read the dissertation
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 WORK ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="sec-title reveal">— Selected <em>work</em></h2></div>
+      <p class="sec-sub reveal d1">Venue-wide celebrations, brand launches and grassroots activations across Ghana. <span class="over" style="top:-24px;right:-130px">real photos coming ✦</span></p>
+    </div>
+    <div class="work-grid">
+      <div class="wcard reveal d1"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7cf59c" stroke-width="1.4"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>La Palm Casino Anniversaries</h4><p>The celebrations behind the venue's highest attendance in five consecutive years.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+      <div class="wcard reveal d2"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f5d06f" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>La Palm Digital Growth</h4><p>Doubled social-media engagement with audience-first content and a 10,000+ customer database.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+      <div class="wcard reveal d3"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff8a7a" stroke-width="1.4"><path d="M8 2v4M16 2v4M3 8h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M9 18l2-3 2 2 3-4"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>CocoLyf Market Entry</h4><p>Route-to-market for an emerging beverage: six partners, street activations, direct sales engine.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+      <div class="wcard reveal"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7cf59c" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>Themed Nights &amp; Loyalty</h4><p>Seasonal, cultural and brand-led event series plus loyalty mechanics that keep guests returning.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+      <div class="wcard reveal d1"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f5d06f" stroke-width="1.4"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5c-1.7 0-3.3-.4-4.7-1L3 21l1.9-5.3A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>Consumer Research Projects</h4><p>Field research for Vodafone broadband, Perk Biscuit and GHone TV — interviews, groups, testing.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+      <div class="wcard reveal d2"><div class="wimg">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff8a7a" stroke-width="1.4"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+        <div class="wfoot"><div class="txt"><h4>Campus Activations</h4><p>Direct-to-consumer sampling and student engagement at Legon and UPSA campuses.</p></div>
+        <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="sec-title reveal">— What she <em>provides</em></h2></div>
+      <p class="sec-sub reveal d1">Six things she can start improving for a brand next week — each grounded in the receipts above.</p>
+    </div>
+    <div class="svc-wrap">
+      <div class="svc-visual reveal d1">
+        <img src="assets/evelyn-sq.jpg" alt="Evelyn speaking to an audience">
+        <div class="ov"></div>
+        <div class="badge">hire her → results ✦</div>
+      </div>
+      <div class="svc-list">
+        <div class="svc reveal d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><h4>Brand Strategy &amp; Communications</h4><p>Positioning, messaging and integrated campaigns that give a brand one clear, believable voice.</p></div></div>
+        <div class="svc reveal d2"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div><div><h4>Social Media &amp; Digital Marketing</h4><p>Content plans, influencer collaborations and engagement systems that grow communities.</p></div></div>
+        <div class="svc reveal d3"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 8h18"/><rect x="3" y="8" width="18" height="14" rx="2"/><path d="M9 15l2 2 4-4"/></svg></div><div><h4>Event Marketing &amp; Activations</h4><p>Anniversaries to street-level sampling — direction, vendor coordination, execution.</p></div></div>
+        <div class="svc reveal"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5c-1.7 0-3.3-.4-4.7-1L3 21l1.9-5.3A8.5 8.5 0 1 1 21 11.5z"/></svg></div><div><h4>Public Relations &amp; Corporate Comms</h4><p>Media presence, stakeholder relations and calm crisis communication.</p></div></div>
+        <div class="svc reveal d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></div><div><h4>Research &amp; Consumer Insights</h4><p>Interviews, focus groups, surveys and database intelligence — findings you can act on.</p></div></div>
+        <div class="svc reveal d2"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h4>CRM &amp; Customer Retention</h4><p>Databases, loyalty programmes and mechanics that turn first-timers into regulars.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 THOUGHTS ================= -->
+<section id="thoughts">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h2 class="sec-title reveal">— How she <em>thinks</em></h2></div>
+      <p class="sec-sub reveal d1">A slice of her LinkedIn brain: human-centred messaging, purpose over paychecks.</p>
+    </div>
+    <div class="tgrid">
+      <a class="thought reveal" href="https://www.linkedin.com/posts/kim-chappell-3599415_i-realize-that-we-are-lucky-to-backfill-every-activity-7500550423322378240-7Z9M" target="_blank" rel="noopener">
+        <span class="q">"</span>
+        <div class="hl">Why do we advertise periods as though the goal is to convince women their period isn't happening? Perhaps sometimes the message should simply be: we've got you.</div>
+        <p>…plus five campaign ideas for period-care brands she'd love to run.</p>
+        <div class="src"><span>MARKETING COMMENTARY · LINKEDIN</span><span class="arrow">→</span></div>
+      </a>
+      <a class="thought reveal d1" href="https://www.linkedin.com/posts/annearchercoach_sitting-in-a-room-with-no-windows-to-the-activity-7467484364570853376-BDIO" target="_blank" rel="noopener">
+        <span class="q">"</span>
+        <p style="margin-top:0">"There's a point where compensation really doesn't matter. You crave <b style="color:var(--ink)">peace of mind, growth and real purpose</b> — great compensation is just a bonus."</p>
+        <div class="src"><span>WORK &amp; PURPOSE · LINKEDIN</span><span class="arrow">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="blobb"></div>
+  <div class="wrap">
+    <div class="blob"></div>
+    <p class="badge-tag reveal" style="justify-content:center"><b>✦</b> Your move · say hello</p>
+    <h2 class="reveal d1">Let's build brands<br>that stay <em>alive</em></h2>
+    <p class="sub2 reveal d2">Got a brand to launch, an event to own, or research that needs to make sense?
+      Accra-based — collaborating across Ghana and beyond.</p>
+    <div class="cbtns reveal d3">
+      <a class="btn white magnetic" href="mailto:evelynyayra98@gmail.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 6L22 7"/></svg>
+        evelynyayra98@gmail.com</a>
+      <a class="btn line magnetic" href="tel:+233500730878">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+        +233 500 730 878</a>
+    </div>
+    <div class="socials reveal d4">
+      <!-- LinkedIn URL pending -->
+      <a class="sbtn magnetic" href="#" title="LinkedIn — URL to be added" aria-label="LinkedIn"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg></a>
+      <a class="sbtn magnetic" href="mailto:evelynyayra98@gmail.com" aria-label="Email"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 6L22 7"/></svg></a>
+      <a class="sbtn magnetic" href="tel:+233500730878" aria-label="Phone"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a>
+    </div>
+  </div>
+  <footer>
+    <div>Evelyn Yayra Kpozo Dzenyoh · <b>🌿</b> Integrated Marketing Communications Specialist · Accra, Ghana<br>Draft v3 — real photos &amp; LinkedIn link pending</div>
+  </footer>
+</section>
+
+<script>
+// ---------- scroll engine ----------
+function inView(el, pad){ const r = el.getBoundingClientRect(); return r.top < innerHeight * pad && r.bottom > 0; }
+function tickAll(){
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => { if (inView(el, .92)) el.classList.add('in'); });
+  document.querySelectorAll('[data-count]:not([data-done])').forEach(el => {
+    if (!inView(el, .96)) return;
+    el.dataset.done = '1';
+    const end = parseFloat(el.dataset.count), pre = el.dataset.prefix || '', suf = el.dataset.suffix || '',
+      comma = el.dataset.comma === '1', dur = 1600, t0 = performance.now();
+    (function tick(t){
+      const p = Math.min((t - t0) / dur, 1), eased = 1 - Math.pow(1 - p, 3), dec = end % 1 !== 0;
+      let out = dec ? (end * eased).toFixed(1) : Math.round(end * eased).toString();
+      if (comma) out = Number(out).toLocaleString('en-US');
+      el.textContent = pre + out + (p === 1 ? suf : '');
+      if (p < 1) requestAnimationFrame(() => tick(performance.now()));
+    })(t0);
+  });
+  document.querySelectorAll('.mb .fill:not([data-done])').forEach(el => {
+    if (inView(el, .96)) { el.dataset.done = '1'; el.style.width = el.dataset.w + '%'; }
+  });
+}
+addEventListener('scroll', tickAll, {passive:true});
+addEventListener('wheel', tickAll, {passive:true});
+addEventListener('resize', tickAll);
+addEventListener('load', tickAll);
+tickAll();
+(function loop(){ tickAll(); requestAnimationFrame(loop); })();
+setInterval(tickAll, 400);
+
+// ---------- progress bar ----------
+const bar = document.getElementById('bar');
+addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - innerHeight;
+  bar.style.width = Math.min(100, scrollY / Math.max(1, h) * 100) + '%';
+}, {passive:true});
+
+// ---------- magnetic ----------
+document.querySelectorAll('.magnetic').forEach(el => {
+  if (!matchMedia('(pointer:fine)').matches) return;
+  el.addEventListener('mousemove', e => {
+    const r = el.getBoundingClientRect();
+    el.style.transform = `translate(${(e.clientX - r.left - r.width/2) * .16}px, ${(e.clientY - r.top - r.height/2) * .16}px)`;
+  });
+  el.addEventListener('mouseleave', () => el.style.transform = '');
+});
+
+// ---------- card tilts ----------
+if (matchMedia('(pointer:fine)').matches){
+  document.querySelectorAll('.stat,.xp-card,.rstat,.wcard,.svc,.thought,.pcard,.chip-quote').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const dx = (e.clientX - r.left) / r.width - .5, dy = (e.clientY - r.top) / r.height - .5;
+      card.style.transform = `perspective(900px) rotateY(${dx * 6}deg) rotateX(${-dy * 6}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => card.style.transform = '');
+  });
+}
+
+// click sparks
+addEventListener('click', e => {
+  if (e.target.closest('a')) return;
+  for (let i = 0; i < 7; i++){
+    const s = document.createElement('div');
+    s.className = 'spark'; s.textContent = ['🌿','✦','·'][i % 3];
+    s.style.cssText = `position:fixed;z-index:998;pointer-events:none;left:${e.clientX}px;top:${e.clientY}px;color:${['#7cf59c','#f5d06f','#ff8a7a'][i % 3]};font-size:1rem`;
+    document.body.appendChild(s);
+    const a = Math.random() * Math.PI * 2, d = 40 + Math.random() * 55;
+    s.animate([{transform:'translate(-50%,-50%) scale(1)', opacity:1},
+      {transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d + 26}px) scale(0)`, opacity:0}],
+      {duration: 700 + Math.random()*350, easing:'cubic-bezier(.2,.7,.2,1)'}).onfinish = () => s.remove();
+  }
+});
+</script>
+</body>
+</html>
