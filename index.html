@@ -717,6 +717,7 @@ if (matchMedia('(pointer:fine)').matches){
 /* =============== GO CRAZY: visible, constant life =============== */
 
 /* headline: letter-by-letter spring + living shimmer on "alive" */
+.hero h1 .word{display:inline-block;white-space:nowrap}
 .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(46px) rotate(9deg) scale(.6);
   animation:chIn .85s cubic-bezier(.2,.95,.3,1.5) forwards}
 @keyframes chIn{to{opacity:1;transform:none}}
@@ -801,11 +802,18 @@ if (matchMedia('(pointer:fine)').matches){
       [...n.childNodes].forEach(node => {
         if (node.nodeType === 3 && node.textContent.trim()){
           const frag = document.createDocumentFragment();
-          [...node.textContent].forEach(ch => {
-            const s = document.createElement('span');
-            s.className = 'ch'; s.style.animationDelay = (0.35 + i++ * 0.045) + 's';
-            s.textContent = ch === ' ' ? '\u00A0' : ch;
-            frag.appendChild(s);
+          node.textContent.split(/(\s+)/).forEach(part => {
+            if (!part) return;
+            if (/^\s+$/.test(part)){ frag.appendChild(document.createTextNode(' ')); return; }
+            const w = document.createElement('span');
+            w.className = 'word'; w.style.whiteSpace = 'nowrap';
+            [...part].forEach(ch => {
+              const s = document.createElement('span');
+              s.className = 'ch'; s.style.animationDelay = (0.35 + i++ * 0.045) + 's';
+              s.textContent = ch;
+              w.appendChild(s);
+            });
+            frag.appendChild(w);
           });
           n.replaceChild(frag, node);
         } else if (node.nodeType === 1){
