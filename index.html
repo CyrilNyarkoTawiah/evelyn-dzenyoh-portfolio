@@ -813,6 +813,15 @@ if (matchMedia('(pointer:fine)').matches){
 .strip3{animation-delay:3.2s}
 .strip2 img{animation:kenburns 20s ease-in-out infinite alternate}
 .strip img{will-change:transform}
+
+@media (prefers-reduced-transparency: reduce){
+  .np{background:#fff}
+  .pcard,.chip-quote{backdrop-filter:none;background:#fff}
+}
+@media (prefers-contrast: more){
+  .np{background:#fff;border-color:#0e2013}
+}
+
 @media(prefers-reduced-motion:reduce){
   .drift,.halo,.arch,.arch img,.mix,.marq .mrow{animation:none!important}
 }
