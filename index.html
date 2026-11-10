@@ -105,6 +105,9 @@ nav{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-conte
 .pcard .socials svg{width:14px;height:14px;fill:currentColor}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .hero-cards{position:relative}
+.portrait{position:relative}
+.hero-cards .halo{position:absolute;left:-20px;right:-20px;top:-30px;aspect-ratio:1;border-radius:50%;border:2px dashed rgba(14,148,85,.5);animation:spin 18s linear infinite;z-index:0}
+.arch{position:relative;z-index:1}
 .chip-quote{position:absolute;left:-40px;bottom:-26px;width:250px;border-radius:18px;background:rgba(255,255,255,.95);
   border:1px solid rgba(14,31,21,.10);backdrop-filter:blur(16px);padding:16px 18px;box-shadow:0 20px 44px rgba(14,31,21,.14);z-index:5;animation:bob2 9s ease-in-out infinite}
 .chip-quote .stars{color:#d9a520;font-size:.8rem;letter-spacing:2px}
@@ -368,6 +371,7 @@ footer b{color:#0e9455}
   </div>
 
   <div class="hero-cards reveal in d2">
+    <div class="halo"></div>
     <div class="strips">
       <div class="strip strip1"><img src="assets/evelyn.jpg" alt="Evelyn at her UniMAC MA graduation" style="object-position:18% 30%"></div>
       <div class="strip strip2"><img src="assets/evelyn.jpg" alt="Evelyn smiling, close-up" style="object-position:50% 22%"></div>
@@ -698,19 +702,197 @@ if (matchMedia('(pointer:fine)').matches){
   }
 }
 
-addEventListener('click', e => {
-  if (e.target.closest('a')) return;
-  for (let i = 0; i < 7; i++){
-    const s = document.createElement('div');
-    s.className = 'spark'; s.textContent = ['🌿','✦','·'][i % 3];
-    s.style.cssText = `position:fixed;z-index:998;pointer-events:none;left:${e.clientX}px;top:${e.clientY}px;color:${['#0e9455','#c99a2e','#d95546'][i % 3]};font-size:1rem`;
-    document.body.appendChild(s);
-    const a = Math.random() * Math.PI * 2, d = 40 + Math.random() * 55;
-    s.animate([{transform:'translate(-50%,-50%) scale(1)', opacity:1},
-      {transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d + 26}px) scale(0)`, opacity:0}],
-      {duration: 700 + Math.random()*350, easing:'cubic-bezier(.2,.7,.2,1)'}).onfinish = () => s.remove();
-  }
-});
+
 </script>
+
+<style id="xtra-motion">
+/* =============== GO CRAZY: visible, constant life =============== */
+#fxCanvas{position:fixed;inset:0;z-index:997;pointer-events:none}
+
+/* headline: letter-by-letter spring + living shimmer on "alive" */
+.hero h1 .ch{display:inline-block;opacity:0;transform:translateY(46px) rotate(9deg) scale(.6);
+  animation:chIn .85s cubic-bezier(.2,.95,.3,1.5) forwards}
+@keyframes chIn{to{opacity:1;transform:none}}
+.hero h1 i{background:linear-gradient(90deg,#0e9455,#c99a2e,#1fae65,#0e9455);background-size:280% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent!important;animation:hueSlide 7s linear infinite}
+@keyframes hueSlide{to{background-position:280% 0}}
+
+/* arch frame morphs its silhouette forever + photo breathes */
+.arch{animation:morph 11s ease-in-out infinite;perspective:900px}
+@keyframes morph{
+  0%,100%{border-radius:999px 999px 30px 30px}
+  25%{border-radius:999px 999px 60px 42px}
+  50%{border-radius:999px 999px 30px 70px}
+  75%{border-radius:999px 999px 70px 30px}}
+.arch img{animation:kenburns 24s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.12) translate(-2%,2%)}}
+.hero h1 .u svg{filter:drop-shadow(0 0 6px rgba(14,148,85,.35))}
+
+/* halo gets an orbiting comet dot */
+.halo::after{content:'';position:absolute;top:50%;left:100%;width:11px;height:11px;margin-top:-5px;border-radius:50%;
+  background:var(--lime);box-shadow:0 0 18px rgba(14,148,85,.9)}
+.sticker{animation-duration:5s}
+.st1:hover,.st2:hover,.st3:hover{transform:scale(1.12) rotate(0deg)!important;transition:transform .35s cubic-bezier(.2,.95,.3,1.6)}
+
+/* section titles: gradient text in constant flow */
+.sec-title em{background:linear-gradient(90deg,#0e9455,#c99a2e,#34b06a,#0e9455);background-size:250% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:hueSlide 8s linear infinite}
+
+/* EVERYTHING floats, all the time (visible without hover) */
+.stat:not(.hl),.xp-card,.wcard,.svc,.thought,.rstat{
+  animation:floaty 7s ease-in-out infinite alternate}
+.stat-grid>.stat:nth-child(2),.xp-grid>.xp-card:nth-child(2),.work-grid>.wcard:nth-child(2),.svc-list>.svc:nth-child(2),.rstats>.rstat:nth-child(2){animation-delay:.7s}
+.stat-grid>.stat:nth-child(3),.xp-grid>.xp-card:nth-child(3),.work-grid>.wcard:nth-child(3),.svc-list>.svc:nth-child(3),.rstats>.rstat:nth-child(3){animation-delay:1.4s}
+.stat-grid>.stat:nth-child(4),.xp-grid>.xp-card:nth-child(4),.work-grid>.wcard:nth-child(4),.svc-list>.svc:nth-child(4),.rstats>.rstat:nth-child(4){animation-delay:2.1s}
+.work-grid>.wcard:nth-child(5),.svc-list>.svc:nth-child(5){animation-delay:2.8s}
+.work-grid>.wcard:nth-child(6),.svc-list>.svc:nth-child(6){animation-delay:3.5s}
+@keyframes floaty{from{transform:translateY(0)}to{transform:translateY(-11px)}}
+.floaty-off .stat,.floaty-off .xp-card,.floaty-off .wcard,.floaty-off .svc,.floaty-off .thought,.floaty-off .rstat{animation-play-state:paused}
+
+/* glow that follows the cursor inside cards */
+.glow-target::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;
+  background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%), rgba(14,148,85,.12), transparent 65%)}
+.glow-target:hover::after{opacity:1}
+
+/* animated gradient border on hover for work cards */
+.wcard::before{content:'';position:absolute;inset:-1px;border-radius:26px;z-index:-1;
+  background:conic-gradient(from var(--ang,0deg),#0e9455,#c99a2e,#34b06a,#c99a2e,#0e9455);
+  opacity:0;transition:opacity .45s;animation:angSpin 3.5s linear infinite}
+@keyframes angSpin{to{--ang:360deg}}
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+.wcard:hover::before{opacity:1}
+.wcard{z-index:1}
+
+/* floating back-to-top */
+#fab{position:fixed;right:24px;bottom:24px;z-index:90;width:54px;height:54px;border-radius:50%;
+  background:#0e2013;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;
+  box-shadow:0 14px 34px rgba(14,32,19,.35);opacity:0;transform:translateY(24px) scale(.6);pointer-events:none;
+  transition:.45s cubic-bezier(.2,.95,.3,1.5)}
+#fab.show{opacity:1;transform:none;pointer-events:auto;animation:bob 3.5s ease-in-out infinite}
+#fab:hover{background:#0e9455;transform:scale(1.12)}
+
+.strip1,.strip2,.strip3{animation:morph 12s ease-in-out infinite}
+.strip2{animation-delay:1.6s}
+.strip3{animation-delay:3.2s}
+.strip2 img{animation:kenburns 20s ease-in-out infinite alternate}
+.strip img{will-change:transform}
+@media(prefers-reduced-motion:reduce){
+  .drift,.halo,.arch,.arch img,.mix,.marq .mrow{animation:none!important}
+}
+</style>
+
+
+<script id="xtra-motion">
+/* =============== motion engine: particles, confetti, letters, velocity, glow =============== */
+(function(){
+  document.body.classList.add('go-crazy');
+  // headline letters
+  const h1 = document.querySelector('.hero h1');
+  if (h1){
+    let i = 0;
+    const wrap = (n) => {
+      [...n.childNodes].forEach(node => {
+        if (node.nodeType === 3 && node.textContent.trim()){
+          const frag = document.createDocumentFragment();
+          [...node.textContent].forEach(ch => {
+            const s = document.createElement('span');
+            s.className = 'ch'; s.style.animationDelay = (0.35 + i++ * 0.045) + 's';
+            s.textContent = ch === ' ' ? '\u00A0' : ch;
+            frag.appendChild(s);
+          });
+          n.replaceChild(frag, node);
+        } else if (node.nodeType === 1){
+          node.classList.add('ch'); node.style.animationDelay = (0.35 + (i += 5) * 0.045) + 's';
+        }
+      });
+    };
+    wrap(h1);
+  }
+
+  // canvas particle field + confetti
+  const cv = document.createElement('canvas'); cv.id = 'fxCanvas';
+  document.body.appendChild(cv);
+  const cx = cv.getContext('2d');
+  let W, H;
+  const rs = () => { W = cv.width = innerWidth; H = cv.height = innerHeight; };
+  addEventListener('resize', rs); rs();
+  const COL = ['#0e9455','#34b06a','#c99a2e','#d95546','#0e2013'];
+  const parts = [];
+  const spawn = () => parts.push({
+    x: Math.random()*W, y: H + 20, vx: (Math.random()-.5)*.35, vy: -(0.35 + Math.random()*.75),
+    s: 3 + Math.random()*6, r: Math.random()*Math.PI, vr: (Math.random()-.5)*.05,
+    tw: Math.random()*Math.PI, leaf: Math.random() < .3, c: COL[Math.floor(Math.random()*3)]
+  });
+  for (let k = 0; k < 26; k++){ spawn(); parts[parts.length-1].y = Math.random()*H; }
+  const confetti = [];
+  window.__burst = (x, y, n) => {
+    for (let k = 0; k < n; k++){
+      const a = Math.random()*Math.PI*2, v = 3 + Math.random()*7;
+      confetti.push({x, y, vx: Math.cos(a)*v, vy: Math.sin(a)*v - 5, g: .22,
+        s: 4 + Math.random()*7, r: Math.random()*Math.PI, vr: (Math.random()-.5)*.35,
+        c: COL[Math.floor(Math.random()*4)], life: 1});
+    }
+  };
+  let t0 = 0;
+  function frame(t){
+    cx.clearRect(0, 0, W, H);
+    if (t - t0 > 700 && parts.length < 34){ spawn(); t0 = t; }
+    for (let i = parts.length - 1; i >= 0; i--){
+      const p = parts[i];
+      p.x += p.vx + Math.sin((t/1400) + p.tw) * .35; p.y += p.vy; p.r += p.vr;
+      if (p.y < -24){ parts.splice(i, 1); continue; }
+      cx.save(); cx.translate(p.x, p.y); cx.rotate(p.r);
+      cx.globalAlpha = .5 + Math.sin(t/300 + p.tw) * .3;
+      cx.fillStyle = p.c;
+      if (p.leaf){ cx.rotate(.78); cx.fillRect(-p.s/2, -p.s/4, p.s, p.s/2); cx.rotate(2.2); cx.fillRect(-p.s/4, -p.s/2, p.s/2, p.s); }
+      else { cx.beginPath(); for (let a = 0; a < 4; a++){ cx.lineTo(Math.cos(a*Math.PI/2)*p.s, Math.sin(a*Math.PI/2)*p.s); } cx.closePath(); cx.fill(); }
+      cx.restore();
+    }
+    for (let i = confetti.length - 1; i >= 0; i--){
+      const c = confetti[i];
+      c.x += c.vx; c.y += c.vy; c.vy += c.g; c.r += c.vr; c.life -= .012;
+      if (c.life <= 0){ confetti.splice(i, 1); continue; }
+      cx.save(); cx.translate(c.x, c.y); cx.rotate(c.r); cx.globalAlpha = c.life; cx.fillStyle = c.c;
+      cx.fillRect(-c.s/2, -c.s/4, c.s, c.s/2); cx.restore();
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  window.__fxParts = parts;
+
+  // click = confetti burst (links keep their native act)
+  addEventListener('click', e => { if (!e.target.closest('a')) window.__burst(e.clientX, e.clientY, 34); });
+
+  // scroll-velocity boosts the marquee
+  const marq = document.querySelectorAll('.mrow');
+  let lastY = scrollY, boost = 0;
+  addEventListener('scroll', () => {
+    const v = scrollY - lastY; lastY = scrollY;
+    boost = Math.min(30, Math.abs(v) * .6 + boost * .9);
+    marq.forEach(m => m.style.marginLeft = (-boost) + 'px');
+  }, {passive:true});
+  (function decay(){ boost *= .92; marq.forEach(m => m.style.marginLeft = (-boost) + 'px'); requestAnimationFrame(decay); })();
+
+  // cursor-tracking glow
+  if (matchMedia('(pointer:fine)').matches){
+    document.querySelectorAll('.stat,.xp-card,.wcard,.svc,.thought,.rstat').forEach(c => {
+      c.classList.add('glow-target');
+      c.addEventListener('mousemove', e => {
+        const r = c.getBoundingClientRect();
+        c.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+        c.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+      });
+    });
+  }
+
+  // floating back-to-top
+  const fab = document.createElement('a');
+  fab.id = 'fab'; fab.href = '#top'; fab.title = 'Back to top';
+  fab.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 20V4m0 0l-6 6m6-6l6 6"/></svg>';
+  document.body.appendChild(fab);
+  addEventListener('scroll', () => fab.classList.toggle('show', scrollY > 700), {passive:true});
+})();
+</script>
+
 </body>
 </html>
