@@ -124,13 +124,6 @@ nav{position:fixed;top:14px;left:0;right:0;z-index:60;display:flex;justify-conte
 .work-grid .wcard:nth-child(5),.svc-list .svc:nth-child(5){transition-delay:.4s}
 .work-grid .wcard:nth-child(6),.svc-list .svc:nth-child(6){transition-delay:.5s}
 
-/* shine sweep on hover */
-.shine{position:relative;overflow:hidden}
-.shine::before{content:'';position:absolute;top:0;left:-80%;width:55%;height:100%;z-index:3;pointer-events:none;
-  background:linear-gradient(100deg,transparent 20%,rgba(14,148,85,.12) 50%,transparent 80%);
-  transform:skewX(-18deg);transition:left .85s ease}
-.shine:hover::before{left:120%}
-
 /* section-title tick draws in */
 .sec-title::before{transform:scaleX(0);transform-origin:left;transition:transform 1.1s cubic-bezier(.22,.9,.28,1) .25s}
 .sec-title.in::before{transform:scaleX(1)}
@@ -414,10 +407,10 @@ footer b{color:#0e9455}
       <p class="sec-sub reveal d1">Every number below is from her work: campaigns executed, databases built, records set. <span class="over" style="top:-26px;right:-8px">she counts! ✦</span></p>
     </div>
     <div class="stat-grid">
-      <div class="stat shine reveal d1"><span class="hl"></span><div class="num" data-count="100" data-suffix="%">0%</div><div class="lbl">Growth in social-media engagement at La Palm Casino</div></div>
-      <div class="stat shine reveal d2"><span class="hl"></span><div class="num" data-count="10000" data-suffix="+" data-comma="1">0</div><div class="lbl">Customer database built for targeted CRM &amp; retention</div></div>
-      <div class="stat shine reveal d3"><span class="hl"></span><div class="num" data-count="8" data-suffix="+">0</div><div class="lbl">Major campaigns &amp; branded events executed annually</div></div>
-      <div class="stat shine reveal d4"><span class="hl"></span><div class="num" data-count="1" data-prefix="#">0</div><div class="lbl">Record-breaking attendance at La Palm's anniversaries in five years</div></div>
+      <div class="stat reveal d1"><span class="hl"></span><div class="num" data-count="100" data-suffix="%">0%</div><div class="lbl">Growth in social-media engagement at La Palm Casino</div></div>
+      <div class="stat reveal d2"><span class="hl"></span><div class="num" data-count="10000" data-suffix="+" data-comma="1">0</div><div class="lbl">Customer database built for targeted CRM &amp; retention</div></div>
+      <div class="stat reveal d3"><span class="hl"></span><div class="num" data-count="8" data-suffix="+">0</div><div class="lbl">Major campaigns &amp; branded events executed annually</div></div>
+      <div class="stat reveal d4"><span class="hl"></span><div class="num" data-count="1" data-prefix="#">0</div><div class="lbl">Record-breaking attendance at La Palm's anniversaries in five years</div></div>
     </div>
   </div>
 </section>
@@ -430,7 +423,7 @@ footer b{color:#0e9455}
       <p class="sec-sub reveal d1">Hospitality, FMCG, academia and the research field: four different ways of being useful to a brand.</p>
     </div>
     <div class="xp-grid">
-      <div class="xp-card shine reveal d1">
+      <div class="xp-card reveal d1">
         <span class="yr">2023 to now</span>
         <h3>Public Relations Officer</h3>
         <div class="org">La Palm Royal Beach Hotel · La Palm Casino, Accra</div>
@@ -441,7 +434,7 @@ footer b{color:#0e9455}
         </ul>
         <div class="win">✦ <b>100%</b> engagement lift · <b>10,000+</b> customer database · <b>8+</b> events a year</div>
       </div>
-      <div class="xp-card shine reveal d2">
+      <div class="xp-card reveal d2">
         <span class="yr p">2024 to 2025</span>
         <h3>Sales &amp; Marketing Manager</h3>
         <div class="org">Pinnacle Coco, the emerging FMCG beverage brand CocoLyf</div>
@@ -451,7 +444,7 @@ footer b{color:#0e9455}
         </ul>
         <div class="win">✦ <b>6</b> distribution partners · recurring monthly revenue growth</div>
       </div>
-      <div class="xp-card shine reveal d3">
+      <div class="xp-card reveal d3">
         <span class="yr p">2021 to 2022</span>
         <h3>Teaching Assistant</h3>
         <div class="org">Institute of Journalism (UniMAC-GIJ), Accra</div>
@@ -461,7 +454,7 @@ footer b{color:#0e9455}
         </ul>
         <div class="win">✦ Communication fundamentals, taught &amp; re-learned daily</div>
       </div>
-      <div class="xp-card shine reveal d4">
+      <div class="xp-card reveal d4">
         <span class="yr p">2016 to 2018</span>
         <h3>Market Researcher (Freelance)</h3>
         <div class="org">BENSUM · Marketing Support Consultancy · Nielsen, Accra</div>
@@ -513,17 +506,17 @@ footer b{color:#0e9455}
       <p class="sec-sub reveal d1">Venue-wide celebrations, brand launches and grassroots activations across Ghana. <span class="over" style="top:-24px;right:-130px">real photos coming ✦</span></p>
     </div>
     <div class="work-grid">
-      <div class="wcard reveal d1"><div class="wimg shine">
+      <div class="wcard reveal d1"><div class="wimg">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0e9455" stroke-width="1.4"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg></div>
         <div class="wfoot"><div class="txt"><h4>La Palm Casino Anniversaries</h4><p>The celebrations behind the venue's highest attendance in five consecutive years.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
       </div>
-      <div class="wcard reveal d2"><div class="wimg shine">
+      <div class="wcard reveal d2"><div class="wimg">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c99a2e" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div>
         <div class="wfoot"><div class="txt"><h4>La Palm Digital Growth</h4><p>Doubled social-media engagement with audience-first content and a 10,000+ customer database.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
       </div>
-      <div class="wcard reveal d3"><div class="wimg shine">
+      <div class="wcard reveal d3"><div class="wimg">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d95546" stroke-width="1.4"><path d="M8 2v4M16 2v4M3 8h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M9 18l2-3 2 2 3-4"/></svg></div>
         <div class="wfoot"><div class="txt"><h4>CocoLyf Market Entry</h4><p>Route-to-market for an emerging beverage: six partners, street activations, direct sales engine.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
@@ -533,12 +526,12 @@ footer b{color:#0e9455}
         <div class="wfoot"><div class="txt"><h4>Themed Nights &amp; Loyalty</h4><p>Seasonal, cultural and brand-led event series plus loyalty mechanics that keep guests returning.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
       </div>
-      <div class="wcard reveal d1"><div class="wimg shine">
+      <div class="wcard reveal d1"><div class="wimg">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c99a2e" stroke-width="1.4"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5c-1.7 0-3.3-.4-4.7-1L3 21l1.9-5.3A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
         <div class="wfoot"><div class="txt"><h4>Consumer Research Projects</h4><p>Field research for Vodafone broadband, Perk Biscuit and GHone TV, spanning interviews, focus groups and product testing.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
       </div>
-      <div class="wcard reveal d2"><div class="wimg shine">
+      <div class="wcard reveal d2"><div class="wimg">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d95546" stroke-width="1.4"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
         <div class="wfoot"><div class="txt"><h4>Campus Activations</h4><p>Direct-to-consumer sampling and student engagement at Legon and UPSA campuses.</p></div>
         <div class="wact"><a class="iact g" href="#top" title="View">↗</a></div></div>
@@ -824,45 +817,9 @@ if (matchMedia('(pointer:fine)').matches){
     tw: Math.random()*Math.PI, leaf: Math.random() < .3, c: COL[Math.floor(Math.random()*3)]
   });
   for (let k = 0; k < 26; k++){ spawn(); parts[parts.length-1].y = Math.random()*H; }
-  const confetti = [];
-  window.__burst = (x, y, n) => {
-    for (let k = 0; k < n; k++){
-      const a = Math.random()*Math.PI*2, v = 3 + Math.random()*7;
-      confetti.push({x, y, vx: Math.cos(a)*v, vy: Math.sin(a)*v - 5, g: .22,
-        s: 4 + Math.random()*7, r: Math.random()*Math.PI, vr: (Math.random()-.5)*.35,
-        c: COL[Math.floor(Math.random()*4)], life: 1});
-    }
-  };
-  let t0 = 0;
-  function frame(t){
-    cx.clearRect(0, 0, W, H);
-    if (t - t0 > 700 && parts.length < 34){ spawn(); t0 = t; }
-    for (let i = parts.length - 1; i >= 0; i--){
-      const p = parts[i];
-      p.x += p.vx + Math.sin((t/1400) + p.tw) * .35; p.y += p.vy; p.r += p.vr;
-      if (p.y < -24){ parts.splice(i, 1); continue; }
-      cx.save(); cx.translate(p.x, p.y); cx.rotate(p.r);
-      cx.globalAlpha = .5 + Math.sin(t/300 + p.tw) * .3;
-      cx.fillStyle = p.c;
-      if (p.leaf){ cx.rotate(.78); cx.fillRect(-p.s/2, -p.s/4, p.s, p.s/2); cx.rotate(2.2); cx.fillRect(-p.s/4, -p.s/2, p.s/2, p.s); }
-      else { cx.beginPath(); for (let a = 0; a < 4; a++){ cx.lineTo(Math.cos(a*Math.PI/2)*p.s, Math.sin(a*Math.PI/2)*p.s); } cx.closePath(); cx.fill(); }
-      cx.restore();
-    }
-    for (let i = confetti.length - 1; i >= 0; i--){
-      const c = confetti[i];
-      c.x += c.vx; c.y += c.vy; c.vy += c.g; c.r += c.vr; c.life -= .012;
-      if (c.life <= 0){ confetti.splice(i, 1); continue; }
-      cx.save(); cx.translate(c.x, c.y); cx.rotate(c.r); cx.globalAlpha = c.life; cx.fillStyle = c.c;
-      cx.fillRect(-c.s/2, -c.s/4, c.s, c.s/2); cx.restore();
-    }
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
   window.__fxParts = parts;
 
-  // click = confetti burst (links keep their native act)
-  addEventListener('click', e => { if (!e.target.closest('a')) window.__burst(e.clientX, e.clientY, 34); });
-
+  
   // scroll-velocity boosts the marquee
   const marq = document.querySelectorAll('.mrow');
   let lastY = scrollY, boost = 0;
