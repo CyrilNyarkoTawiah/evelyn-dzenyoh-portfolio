@@ -700,7 +700,6 @@ if (matchMedia('(pointer:fine)').matches){
 
 <style id="xtra-motion">
 /* =============== GO CRAZY: visible, constant life =============== */
-#fxCanvas{position:fixed;inset:0;z-index:997;pointer-events:none}
 
 /* headline: letter-by-letter spring + living shimmer on "alive" */
 .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(46px) rotate(9deg) scale(.6);
@@ -776,7 +775,7 @@ if (matchMedia('(pointer:fine)').matches){
 
 
 <script id="xtra-motion">
-/* =============== motion engine: particles, confetti, letters, velocity, glow =============== */
+/* =============== motion engine: letters, velocity, glow =============== */
 (function(){
   document.body.classList.add('go-crazy');
   // headline letters
@@ -802,22 +801,6 @@ if (matchMedia('(pointer:fine)').matches){
     wrap(h1);
   }
 
-  // canvas particle field + confetti
-  const cv = document.createElement('canvas'); cv.id = 'fxCanvas';
-  document.body.appendChild(cv);
-  const cx = cv.getContext('2d');
-  let W, H;
-  const rs = () => { W = cv.width = innerWidth; H = cv.height = innerHeight; };
-  addEventListener('resize', rs); rs();
-  const COL = ['#0e9455','#34b06a','#c99a2e','#d95546','#0e2013'];
-  const parts = [];
-  const spawn = () => parts.push({
-    x: Math.random()*W, y: H + 20, vx: (Math.random()-.5)*.35, vy: -(0.35 + Math.random()*.75),
-    s: 3 + Math.random()*6, r: Math.random()*Math.PI, vr: (Math.random()-.5)*.05,
-    tw: Math.random()*Math.PI, leaf: Math.random() < .3, c: COL[Math.floor(Math.random()*3)]
-  });
-  for (let k = 0; k < 26; k++){ spawn(); parts[parts.length-1].y = Math.random()*H; }
-  window.__fxParts = parts;
 
   
   // scroll-velocity boosts the marquee
